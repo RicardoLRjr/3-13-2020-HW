@@ -30,13 +30,14 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      <form id="save" action="POST"></form>
         <div class="row">
           <div class="col time-block">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text hour">9AM</span>
               </div>
-              <textarea class="form-control" aria-label="With textarea" id="9AM"></textarea>
+              <textarea type = text class="form-control" aria-label="With textarea" id="9AM"></textarea>
               <button class="saveBtn"><i class="fas fa-save"></i></button>
             </div>
           </div>
@@ -58,7 +59,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text hour">11AM</span>
               </div>
-              <textarea class="form-control" aria-label="With textarea" id="11AM"></textarea>
+              <textarea form="save" class="form-control" aria-label="With textarea" id="11AM"></textarea>
               <button class="saveBtn"><i class="fas fa-save"></i></button>
             </div>
           </div>

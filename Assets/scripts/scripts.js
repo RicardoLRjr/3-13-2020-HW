@@ -25,9 +25,20 @@ $(document).ready(function() {
   var three = $("#3PM");
   var four = $("#4PM");
   var five = $("#5PM");
-  var block = $("#basic-addon1");
-  var workHourCheck = "";
+//   var blockInput = $(
   headerDate();
+  write();
+  function write(){
+    document.getElementById("9AM").value = localStorage.getItem("9")
+    document.getElementById("10AM").value = localStorage.getItem("10")
+    document.getElementById("11AM").value = localStorage.getItem("11")
+    document.getElementById("12PM").value = localStorage.getItem("12")
+    document.getElementById("1PM").value = localStorage.getItem("13")
+    document.getElementById("2PM").value = localStorage.getItem("14")
+    document.getElementById("3PM").value = localStorage.getItem("15")
+    document.getElementById("4PM").value = localStorage.getItem("16")
+    document.getElementById("5PM").value = localStorage.getItem("17")
+  }
   // hourCheckWork();
   function headerDate() {
     $("#currentDay").text(now);
@@ -43,98 +54,127 @@ $(document).ready(function() {
   tenCheck();
   nineCheck();
 
-  // // function hourCheckWork(){
-  // // if(nowHour > 17 || nowHour < 9){
-  // // workHourCheck = false
-  // // console.log(workHourCheck)
-  // // return
-  // // }
-  // // else
-  // // workHourCheck = true;
-
-  // }
+$(".saveBtn").on("click", function(){
+var nineValue = document.getElementById("9AM").value
+localStorage.setItem("9", nineValue)
+var tenValue = document.getElementById("10AM").value
+localStorage.setItem("10", tenValue)
+var eleValue = document.getElementById("11AM").value
+localStorage.setItem("11", eleValue)
+var noonValue = document.getElementById("1PM").value
+localStorage.setItem("12", noonValue)
+var oneValue = document.getElementById("1PM").value
+localStorage.setItem("13", oneValue)
+var twoValue = document.getElementById("2PM").value
+localStorage.setItem("14", twoValue)
+var thrValue = document.getElementById("3PM").value
+localStorage.setItem("15", thrValue)
+var fourValue = document.getElementById("4PM").value
+localStorage.setItem("16", fourValue)
+var fiveValue = document.getElementById("5PM").value
+localStorage.setItem("17", fiveValue)
+}
+)
   console.log(moment().hour());
   function nineCheck() {
     var nowHour = moment().hour();
     if (nowHour < 9) {
       $(nine).addClass("future");
-    } else if ((nowHour === 9)) {
+    } else if (nowHour === 9) {
       $(nine).addClass("present");
-    } else (nowHour > 9) 
-       { (nine).addClass("past")};
+    } else nowHour > 9;
+    {
+      nine.addClass("past");
+    }
   }
 
   function tenCheck() {
     var nowHour = moment().hour();
     if (nowHour < 10) {
       $(ten).addClass("future");
-    } else if ((nowHour === 10)) {
+    } else if (nowHour === 10) {
       $(ten).addClass("present");
-    } else (nowHour > 10) 
-    {(ten).addClass("past")};
+    } else nowHour > 10;
+    {
+      ten.addClass("past");
+    }
   }
   function elevenCheck() {
     var nowHour = moment().hour();
     if (nowHour < 11) {
       $(eleven).addClass("future");
-    } else if ((nowHour === 11)) {
+    } else if (nowHour === 11) {
       $(eleven).addClass("present");
-    } else (nowHour > 11) 
-        {(eleven).addClass("past")};
+    } else nowHour > 11;
+    {
+      eleven.addClass("past");
+    }
   }
   function noonCheck() {
     var nowHour = moment().hour();
     if (nowHour < 12) {
       $(noon).addClass("future");
-    } else if ((nowHour === 12)) {
+    } else if (nowHour === 12) {
       $(noon).addClass("present");
-    } else (nowHour > 12)
-    {(noon).addClass("past")};
+    } else nowHour > 12;
+    {
+      noon.addClass("past");
+    }
   }
   function oneCheck() {
     var nowHour = moment().hour();
     if (nowHour < 13) {
       $(one).addClass("future");
     }
-    if ((nowHour === 13)) {
+    if (nowHour === 13) {
       $(one).addClass("present");
-    } else (nowHour > 13)
-    {(one).addClass("past")};
+    } else nowHour > 13;
+    {
+      one.addClass("past");
+    }
   }
   function twoCheck() {
     var nowHour = moment().hour();
     if (nowHour < 14) {
       $(two).addClass("future");
-    } else if ((nowHour === 14)) {
+    } else if (nowHour === 14) {
       $(two).addClass("present");
-    } else (nowHour > 14)
-    {(two).addClass("past")};
+    } else nowHour > 14;
+    {
+      two.addClass("past");
+    }
   }
   function threeCheck() {
     var nowHour = moment().hour();
     if (nowHour < 15) {
       $(three).addClass("future");
-    } else if ((nowHour === 15)) {
+    } else if (nowHour === 15) {
       $(three).addClass("present");
-    } else (nowHour > 15)
-    {(three).addClass("past")};
+    } else nowHour > 15;
+    {
+      three.addClass("past");
+    }
   }
   function fourCheck() {
     var nowHour = moment().hour();
     if (nowHour < 16) {
       $(four).addClass("future");
-    } else if ((nowHour === 16)) {
+    } else if (nowHour === 16) {
       $(four).addClass("present");
-    } else (nowHour > 16)
-    {(four).addClass("past")};
+    } else nowHour > 16;
+    {
+      four.addClass("past");
+    }
   }
   function fiveCheck() {
     var nowHour = moment().hour();
     if (nowHour < 17) {
       $(five).addClass("future");
-    } else if ((nowHour === 17)) {
+    } else if (nowHour === 17) {
       $(five).addClass("present");
-    } else (nowHour > 17)
-    {(five).addClass("past")};
+    } else nowHour > 17;
+    {
+      five.addClass("past");
+    }
   }
 });
