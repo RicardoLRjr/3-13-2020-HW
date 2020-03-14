@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="Assets/styles/style.css"/>
+    <link rel="stylesheet" href="Assets/styles/style.css" />
 
     <title>Work Day Scheduler</title>
   </head>
@@ -31,10 +31,107 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
 
-      
-    </div>
+      <form id="save" action="POST"></form>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">9AM</span>
+              </div>
+              <textarea type = text class="form-control" aria-label="With textarea" id="9AM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">10AM</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea" id="10AM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">11AM</span>
+              </div>
+              <textarea form="save" class="form-control" aria-label="With textarea" id="11AM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">12PM</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea" id="12PM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">1PM</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea" id="1PM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">2PM</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea" id="2PM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">3PM</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea" id="3PM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">4PM</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea" id="4PM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col time-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text hour">5PM</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea" id="5PM"></textarea>
+              <button class="saveBtn"><i class="fas fa-save"></i></button>
+            </div>
+          </div>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
