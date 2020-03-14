@@ -26,10 +26,12 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
+      <p id="todayDate"></p>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+
       <form id="save" action="POST"></form>
         <div class="row">
           <div class="col time-block">
@@ -130,7 +132,6 @@
             </div>
           </div>
         </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
